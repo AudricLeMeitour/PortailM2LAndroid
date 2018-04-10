@@ -100,16 +100,16 @@ public class DeplacementAdapter extends BaseAdapter {
 
         }
         Deplacement exo = this.getItem(position);
-//        idAdherent.setText(exo.getIdAdherent());
+        idAdherent.setText((Integer.toString(exo.getIdAdherent())));
         dateDeplacement.setText(exo.getDateDeplacement());
         motif.setText(exo.getMotif());
-        villeA.setText(exo.getVilleA());
-        villeD.setText(exo.getVilleD());
-        //cout.setText(exo.getCout());
-        //kiloM.setText(exo.getKiloM());
-        //fraisHebergement.setText(exo.getFraisHebergement());
-        //fraisRepas.setText(exo.getFraisRepas());
-        //fraisPeage.setText(exo.getFraisPeage());
+        villeA.setText(Integer.toString(exo.getVilleA()));
+        villeD.setText(Integer.toString(exo.getVilleD()));
+        cout.setText(Integer.toString(exo.getCout()));
+        kiloM.setText(Integer.toString(exo.getKiloM()));
+        fraisHebergement.setText(Integer.toString(exo.getFraisHebergement()));
+        fraisRepas.setText(Integer.toString(exo.getFraisRepas()));
+        fraisPeage.setText(Integer.toString(exo.getFraisPeage()));
         return convertView;
     }
 
